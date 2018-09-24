@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Захваткина](https://up.htmlacademy.ru/adaptive/15/user/490491).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Распономарев](https://htmlacademy.ru/profile/id64492).
 
 ---
 
