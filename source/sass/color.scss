@@ -1,0 +1,62 @@
+.color__list {
+  @include reset-indents;
+  padding-top: 34px;
+  padding-bottom: 40px;
+
+  list-style: none;
+}
+
+.color__item {
+  @include reset-indents;
+  margin-left: 62px;
+  margin-bottom: 39px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.color__label {
+  position: relative;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $dark-font-color;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -8px;
+    left: -62px;
+
+    box-sizing: border-box;
+
+    width: 40px;
+    height: 39px;
+
+    border: 2px solid $grey-background-color;
+  }
+
+  &:hover::before {
+    border-color: $bright-font-color;
+  }
+
+  &:active::before {
+    border-color: $lightgrey-font-color;
+  }
+}
+
+.color__checkbox:checked + .color__label::before,
+.color__checkbox:not(:checked):active + .color__label::before {
+  background: url(../img/icon-tick.svg) no-repeat center center;
+  background-size: 22px 22px;
+}
+
+.color__checkbox:checked:active + .color__label::before {
+  background: none;
+}
+

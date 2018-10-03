@@ -1,0 +1,28 @@
+.catalog__title {
+  @include reset-indents;
+  @include indents-mobile;
+  padding-top: 71px;
+  padding-bottom: 76px;
+
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $dark-font-color;
+
+  background-color: $secondary-background-color;
+}
+
+.catalog__list {
+  @include reset-indents;
+  @include indents-mobile;
+  padding-top: 30px;
+  padding-bottom: 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  @include reset-indents;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,24 @@
+@mixin reset-indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin indents-mobile {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin indents-tablet {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@mixin indents-desktop-index {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@mixin indents-desktop {
+  padding-left: 50px;
+  padding-right: 50px;
+}
