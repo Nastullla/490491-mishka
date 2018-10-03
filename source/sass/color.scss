@@ -52,7 +52,7 @@
 
 .color__checkbox:checked + .color__label::before,
 .color__checkbox:not(:checked):active + .color__label::before {
-  background: url(../img/icon-tick.svg) no-repeat center center;
+  background: url("../img/icon-tick.svg") no-repeat center center;
   background-size: 22px 22px;
 }
 

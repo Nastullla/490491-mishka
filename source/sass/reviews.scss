@@ -73,13 +73,13 @@
   border: 1px solid #ececec;
 
   &--previous {
-    background: url(../img/icon-left-arrow.svg) no-repeat 37px center;
+    background: url("../img/icon-left-arrow.svg") no-repeat 37px center;
   }
 
   &--following {
     width: 129px;
 
-    background: url(../img/icon-right-arrow.svg) no-repeat 37px center;
+    background: url("../img/icon-right-arrow.svg") no-repeat 37px center;
 
     border-left-width: 0;
   }

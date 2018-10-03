@@ -31,34 +31,32 @@
     width: 55px;
     height: 38px;
     margin-bottom: 16px;
-
   }
 
   &--eco::before {
-    background: url(../img/icon-feature-flower.svg) no-repeat 8px top;
+    background: url("../img/icon-feature-flower.svg") no-repeat 8px top;
   }
 
   &--style::before {
-    background: url(../img/icon-feature-money.svg) no-repeat;
+    background: url("../img/icon-feature-money.svg") no-repeat;
   }
 
   &--like::before {
-    background: url(../img/icon-feature-heart.svg) no-repeat 7px 6px;
+    background: url("../img/icon-feature-heart.svg") no-repeat 7px 6px;
   }
 
   &--made-with-love::before {
-    background: url(../img/icon-feature-ball.svg) no-repeat 3px 3px;
+    background: url("../img/icon-feature-ball.svg") no-repeat 3px 3px;
   }
 
   &--fatherland::before {
     margin-left: -6px;
-    background: url(../img/icon-feature-rocket.svg) no-repeat 0px 4px;
+    background: url("../img/icon-feature-rocket.svg") no-repeat 0 4px;
   }
 
   &--packaging::before {
-    background: url(../img/icon-feature-gift.svg) no-repeat 3px 2px;
+    background: url("../img/icon-feature-gift.svg") no-repeat 3px 2px;
   }
-
 }
 
 .advantages__text {
