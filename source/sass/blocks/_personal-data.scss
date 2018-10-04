@@ -1,15 +1,13 @@
-.personal-data__wrap {
-  div {
-    margin-bottom: 22px;
-  }
+.personal-data__field-group {
+  margin-bottom: 22px;
+}
 
-  div:first-child {
-    margin-top: 29px;
-  }
+.personal-data__field-group:first-child {
+  margin-top: 29px;
+}
 
-  div:last-child {
-    margin-bottom: 31px;
-  }
+.personal-data__field-group:last-child {
+  margin-bottom: 31px;
 }
 
 .personal-data__label {
