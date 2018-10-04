@@ -1,0 +1,35 @@
+.wishes__comment {
+  box-sizing: border-box;
+
+  width: 100%;
+  min-height: 142px;
+  margin-top: 25px;
+  margin-bottom: 11px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $grey-font-color;
+
+  border: 2px solid $grey-background-color;
+
+  resize: none;
+
+  &:hover {
+    border-color: $bright-font-color;
+  }
+
+  &:focus {
+    outline: none;
+
+    border-color: $bright-font-color;
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}

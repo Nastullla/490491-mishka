@@ -1,0 +1,37 @@
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 320px;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1150px;
+  }
+
+  .body-index {
+    width: 1250px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  // -webkit-clip-path: inset(100%);
+  //         clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

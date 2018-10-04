@@ -1,0 +1,70 @@
+.advantages {
+  @include indents-mobile;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.advantages__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $dark-font-color;
+}
+
+.advantages__list {
+  @include reset-indents;
+  padding-top: 32px;
+  padding-bottom: 10px;
+
+  list-style: none;
+}
+
+.advantages__item {
+  @include reset-indents;
+  margin-bottom: 29px;
+
+  &::before {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 38px;
+    margin-bottom: 16px;
+  }
+
+  &--eco::before {
+    background: url("../img/icon-feature-flower.svg") no-repeat 8px top;
+  }
+
+  &--style::before {
+    background: url("../img/icon-feature-money.svg") no-repeat;
+  }
+
+  &--like::before {
+    background: url("../img/icon-feature-heart.svg") no-repeat 7px 6px;
+  }
+
+  &--made-with-love::before {
+    background: url("../img/icon-feature-ball.svg") no-repeat 3px 3px;
+  }
+
+  &--fatherland::before {
+    margin-left: -6px;
+    background: url("../img/icon-feature-rocket.svg") no-repeat 0 4px;
+  }
+
+  &--packaging::before {
+    background: url("../img/icon-feature-gift.svg") no-repeat 3px 2px;
+  }
+}
+
+.advantages__text {
+  @include reset-indents;
+  width: 250px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $dark-font-color;
+}

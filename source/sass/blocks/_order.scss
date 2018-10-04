@@ -1,0 +1,30 @@
+.order__title {
+  @include reset-indents;
+  @include indents-mobile;
+  padding-top: 71px;
+  padding-bottom: 75px;
+
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $dark-font-color;
+
+  background-color: $secondary-background-color;
+}
+
+.order__text {
+  @include reset-indents;
+  @include indents-mobile;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $grey-font-color;
+}
+
+.order__form {
+  @include indents-mobile;
+}

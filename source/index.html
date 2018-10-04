@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Mishka</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body-index">
@@ -45,11 +43,11 @@
     <section class="products">
       <h1 class="products-title">Милые штуки ручной </br> работы для дома</h1>
       <div class="products__wrap">
-        <a class="products__link" href="#">
-          <span>Предметы интерьера</span>
+        <a class="products__link products__link--interior" href="#">
+          <span class="products__label">Предметы интерьера</span>
         </a>
-        <a class="products__link" href="#">
-          <span>Детские игрушки</span>
+        <a class="products__link products__link--toy" href="#">
+          <span class="products__label">Детские игрушки</span>
         </a>
       </div>
     </section>
@@ -74,7 +72,7 @@
           <td>15 см</th>
         </tr>
       </table>
-      <img class="promo__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзины">
+      <img class="promo__image" src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзины">
       <b class="promo__price">Цена: 990 руб.</b>
       <a class="promo__button button" href="#">Заказать</a>
     </section>
@@ -83,23 +81,23 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <b class="advantages__title">Коротко о нас:</b>
       <ul class="advantages__list">
-        <li class="advantages__item">
-          <p class="advantages__text advantages__text--eco">Экологически<br>чистые материалы</p>
+        <li class="advantages__item advantages__item--eco">
+          <p class="advantages__text">Экологически<br>чистые материалы</p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text advantages__text--style">Скандинавский стиль<br>по российской цене</p>
+        <li class="advantages__item advantages__item--style">
+          <p class="advantages__text">Скандинавский стиль<br>по российской цене</p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text advantages__text--like">Увеличивает лайки<br>на фотографиях</p>
+        <li class="advantages__item advantages__item--like">
+          <p class="advantages__text">Увеличивает лайки<br>на фотографиях</p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text advantages__text--made-with-love">Связано вручную с любовью и умилением</p>
+        <li class="advantages__item advantages__item--made-with-love">
+          <p class="advantages__text">Связано вручную с любовью и умилением</p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text advantages__text--fatherland">Поддержка отечественного производителя</p>
+        <li class="advantages__item advantages__item--fatherland">
+          <p class="advantages__text">Поддержка отечественного производителя</p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text advantages__text--packaging">Поставляется в подарочной упаковке</p>
+        <li class="advantages__item advantages__item--packaging">
+          <p class="advantages__text">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </section>
@@ -144,7 +142,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="#">
-      <img class="page-footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип Mishka">
+      <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Mishka">
     </a>
 
     <div class="page-footer__social social">
@@ -153,9 +151,13 @@
           <a class="social__link social__link--instagram" href="#">
             <span class="visually-hidden">Мы в инстаграмм</span>
           </a>
+        </li>
+        <li class="social__item">
           <a class="social__link social__link--facebook" href="#">
             <span class="visually-hidden">Мы в фейсбуке</span>
           </a>
+        </li>
+        <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
             <span class="visually-hidden">Мы в твитере</span>
           </a>
@@ -165,11 +167,13 @@
 
     <p class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+
+      </a>
     </p>
   </footer>
 
-  <section class="modal">
+  <section class="modal" style="display: none;">
     <h2 class="modal__title">Добавить в корзину</h2>
     <form class="modal__form form-choose-size" action="https://echo.htmlacademy.ru" method="post">
       <p class="form-choose-size__title">Выберите размер:</p>

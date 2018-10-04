@@ -1,0 +1,26 @@
+.site-list {
+  @include reset-indents;
+
+  list-style: none;
+}
+
+.site-list__item {
+  @include reset-indents;
+}
+
+.site-list__link {
+  display: block;
+
+  box-sizing: border-box;
+
+  min-height: 79px;
+  padding-top: 26px;
+  padding-left: 75px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $dark-font-color;
+
+  border-bottom: 1px solid #ececec;
+}

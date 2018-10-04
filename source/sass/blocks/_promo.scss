@@ -1,0 +1,91 @@
+.promo {
+  @include indents-mobile;
+
+  padding-top: 27px;
+  padding-bottom: 40px;
+}
+
+.promo__wrap {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 23px;
+}
+
+.promo__caption {
+  @include reset-indents;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $bright-font-color;
+
+  order: 5;
+}
+
+.promo__title {
+  @include reset-indents;
+  margin-bottom: 5px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $dark-font-color;
+}
+
+.promo__description {
+  @include reset-indents;
+  margin-bottom: 18px;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $grey-font-color;
+}
+
+.promo__table {
+  width: 100%;
+  margin-bottom: 28px;
+
+  border-collapse: collapse;
+}
+
+.promo__row {
+  td {
+    padding-top: 9px;
+    padding-bottom: 10px;
+
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $grey-font-color;
+
+    border-bottom: 1px solid #ececec;
+
+    &:first-child {
+      width: 95px;
+    }
+  }
+}
+
+.promo__image {
+  margin-bottom: 19px;
+}
+
+.promo__price {
+  display: block;
+
+  @include reset-indents;
+  margin-bottom: 26px;
+
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $grey-font-color;
+}
+
+.promo__button {
+  width: 260px;
+}

@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Mishka</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -95,15 +93,15 @@
         <div class="form-order__data personal-data">
             <p class="block-title personal-data__title">ФИО</p>
             <div class="personal-data__wrap">
-              <div>
+              <div class="personal-data__field-group">
                 <label class="personal-data__label" for="name">Имя:</label>
                 <input class="personal-data__field" type="text" id="name" name="name" placeholder="Введите ваше имя*">
               </div>
-              <div>
+              <div class="personal-data__field-group">
                 <label class="personal-data__label" for="surname">Фамилия:</label>
                 <input class="personal-data__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
               </div>
-              <div>
+              <div class="personal-data__field-group">
                 <label class="personal-data__label" for="patronymic">Отчество:</label>
                 <input class="personal-data__field" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
               </div>
@@ -140,7 +138,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="#">
-      <img class="page-footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип Mishka">
+      <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Mishka">
     </a>
 
     <div class="page-footer__social social">
@@ -149,9 +147,13 @@
           <a class="social__link social__link--instagram" href="#">
             <span class="visually-hidden">Мы в инстаграмм</span>
           </a>
+        </li>
+        <li class="social__item">
           <a class="social__link social__link--facebook" href="#">
             <span class="visually-hidden">Мы в фейсбуке</span>
           </a>
+        </li>
+        <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
             <span class="visually-hidden">Мы в твитере</span>
           </a>

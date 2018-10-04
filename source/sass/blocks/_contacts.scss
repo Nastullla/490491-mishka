@@ -1,0 +1,65 @@
+.contacts {
+  @include indents-mobile;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+
+.contacts__title {
+  @include reset-indents;
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $dark-font-color;
+}
+
+.contacts__wrap {
+  display: flex;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 37px;
+  }
+}
+
+.contacts__caption {
+  display: inline-block;
+
+  flex-shrink: 0;
+
+  width: 77px;
+
+  @include reset-indents;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $grey-font-color;
+}
+
+.contacts__text {
+  @include reset-indents;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $grey-font-color;
+}
+
+.contacts__map {
+  position: relative;
+  left: 50%;
+
+  width: 100vw;
+  height: 457px;
+  margin-bottom: 39px;
+
+  background: url("../img/map-mobile@1x.jpg");
+
+  transform: translateX(-50%);
+}
+
+.contacts .contacts__button {
+  margin-bottom: 20px;
+}
