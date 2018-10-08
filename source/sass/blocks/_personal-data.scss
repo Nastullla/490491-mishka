@@ -49,9 +49,146 @@
   }
 }
 
+.personal-data__wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 34px;
+
+    opacity: 0.2;
+  }
+
+  &--phone::after {
+    right: 8px;
+
+    width: 25px;
+    height: 24px;
+
+    background: url("../img/icon-phone.svg") no-repeat;
+  }
+
+  &--mail::after {
+    right: 4px;
+
+    width: 32px;
+    height: 31px;
+
+    background: url("../img/icon-mail.svg") no-repeat;
+  }
+}
+
 .personal-data--single-field {
   .personal-data__field {
     margin-top: 9px;
     margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .personal-data {
+    @include indents-tablet;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 67px;
+    padding-bottom: 19px;
+
+    background-color: $main-background-color;
+  }
+
+  .personal-data__wrap {
+    width: 100%;
+  }
+
+  .personal-data__field-group {
+    display: flex;
+
+    margin-bottom: 21px;
+
+    align-items: baseline;
+  }
+
+  .personal-data__field-group:first-child {
+    margin-top: -20px;
+  }
+
+  .personal-data__title {
+    flex-shrink: 0;
+  }
+
+  .personal-data__label {
+    margin-right: 26px;
+
+    font-size: 19px;
+  }
+
+  .personal-data__field {
+    padding-left: 16px;
+    padding-bottom: 12px;
+
+    font-size: 19px;
+  }
+
+  .personal-data--single-field {
+    display: block;
+
+    padding-top: 47px;
+    padding-bottom: 50px;
+
+    background-color: $secondary-background-color;
+  }
+
+  .personal-data__wrapper {
+    display: flex;
+    align-items: baseline;
+
+    &::after {
+      top: 14px;
+    }
+
+    &--phone::after {
+      right: 26px;
+    }
+
+    &--mail::after {
+      right: 22px;
+    }
+  }
+
+  .personal-data__wrapper:first-child {
+    margin-bottom: 21px;
+  }
+
+  .personal-data--single-field .personal-data__field {
+    width: 100%;
+    margin: 0;
+
+    background-color: $secondary-background-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-data__wrap {
+    width: 700px;
+  }
+
+  .personal-data__field {
+    padding-left: 18px;
+  }
+
+  .personal-data--single-field {
+    padding-right: 225px;
+  }
+
+  .personal-data__wrapper {
+    &--phone::after {
+      right: 8px;
+    }
+
+    &--mail::after {
+      right: 4px;
+    }
   }
 }

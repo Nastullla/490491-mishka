@@ -2,7 +2,12 @@
   @include indents-mobile;
 
   padding-top: 27px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: -8px bottom;
+  background-size: 320px 7px;
 }
 
 .promo__wrap {
@@ -70,7 +75,7 @@
 }
 
 .promo__image {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .promo__price {
@@ -88,4 +93,146 @@
 
 .promo__button {
   width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+
+    @include indents-tablet;
+    padding-top: 34px;
+    padding-bottom: 69px;
+
+    background-position: -21px bottom;
+    background-size: 770px 17px;
+  }
+
+  .promo__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: -3px;
+    margin-bottom: 44px;
+  }
+
+  .promo__caption {
+    width: 126px;
+    padding-top: 11px;
+
+    text-align: center;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .promo__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__description {
+    width: 290px;
+    margin-bottom: 36px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__table {
+    width: 291px;
+    margin-bottom: 56px;
+    margin-left: -1px;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 141px;
+    left: 384px;
+
+    width: 333px;
+    height: 404px;
+    margin-bottom: 0;
+  }
+
+  .promo__price {
+    width: 286px;
+    margin-bottom: 34px;
+
+    font-size: 20px;
+  }
+
+  .promo .promo__button {
+    width: 292px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 112px;
+    padding-bottom: 96px;
+
+    background-position: -26px bottom;
+    background-size: 1050px 23px;
+  }
+
+  .promo__wrap {
+    position: relative;
+
+    justify-content: flex-start;
+
+    z-index: 10;
+  }
+
+  .promo__caption {
+    box-sizing: border-box;
+
+    width: 173px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    order: 0;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__description {
+    margin-left: 175px;
+    margin-bottom: 50px;
+  }
+
+  .promo__table {
+    margin-left: 175px;
+    margin-bottom: 108px;
+  }
+
+  .promo__row {
+    td {
+      padding-top: 7px;
+      padding-bottom: 12px;
+    }
+  }
+
+  .promo__image {
+    top: 60px;
+    left: 525px;
+
+    width: 525px;
+    height: 636px;
+  }
+
+  .promo__price {
+    margin-left: 175px;
+  }
+
+  .promo .promo__button {
+    margin-left: 175px;
+  }
 }

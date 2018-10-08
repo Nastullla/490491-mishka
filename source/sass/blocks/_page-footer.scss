@@ -29,3 +29,59 @@
 
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @include indents-tablet;
+    padding-top: 51px;
+    padding-bottom: 30px;
+  }
+
+  .page-footer__logo {
+    display: block;
+
+    margin-right: 161px;
+  }
+
+  .page-footer__social {
+    margin-top: 8px;
+  }
+
+  .page-footer__social::after {
+    display: none;
+  }
+
+  .page-footer__copyright {
+    @include reset-indents;
+    margin-left: auto;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include indents-desktop;
+    padding-top: 51px;
+    padding-bottom: 28px;
+  }
+
+  .body-index .page-footer {
+    @include indents-desktop-index;
+  }
+
+  .page-footer__logo {
+    margin-right: 352px;
+  }
+
+  .page-footer__social {
+    margin-top: 8px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 4px;
+  }
+}

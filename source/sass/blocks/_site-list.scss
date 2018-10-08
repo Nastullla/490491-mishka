@@ -6,6 +6,11 @@
 
 .site-list__item {
   @include reset-indents;
+
+  &--new,
+  &--sale {
+    display: none;
+  }
 }
 
 .site-list__link {
@@ -23,4 +28,145 @@
   color: $dark-font-color;
 
   border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    position: relative;
+    display: flex;
+
+    &::after {
+      content: "";
+
+      display: block;
+
+      position: absolute;
+      left: -50px;
+      right: -50px;
+      bottom: 0;
+      height: 1px;
+
+      background: #dfdfdf;
+    }
+  }
+
+
+  .site-list__item {
+    height: 89px;
+  }
+
+  .site-list__link {
+    min-height: 30px;
+
+    @include reset-indents;
+
+    border: none;
+  }
+
+  .site-list__item--catalog {
+    margin-right: 14px;
+    margin-top: 106px;
+    margin-bottom: -106px;
+  }
+
+  .site-list__item--catalog .site-list__link {
+    width: 153px;
+
+    font-size: 15px;
+  }
+
+  .site-list__item--order {
+    margin-top: 106px;
+    margin-bottom: -106px;
+  }
+
+  .site-list__item--order .site-list__link {
+    width: 153px;
+
+    font-size: 15px;
+  }
+
+  .site-list__item--search {
+    margin-left: auto;
+
+    border-left: 1px solid #e7e7e7;
+  }
+
+  .site-list__item--search .site-list__link {
+    width: 82px;
+  }
+
+  .site-list__search-label {
+    display: none;
+  }
+
+  .site-list__item--cart {
+    box-sizing: border-box;
+
+    width: 265px;
+
+    border-left: 1px solid #e7e7e7;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    flex-wrap: wrap;
+
+    &::after {
+      bottom: 90px;
+    }
+  }
+
+  .site-list__item--catalog {
+    box-sizing: border-box;
+
+    width: 185px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    border-right: 1px solid #e7e7e7;
+  }
+
+  .site-list__item--catalog .site-list__link {
+    font-size: 17px;
+  }
+
+  .site-list__item--order {
+    box-sizing: border-box;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 250px;
+  }
+
+  .site-list__item--order .site-list__link {
+    width: 185px;
+
+    font-size: 17px;
+  }
+
+  .site-list__item--cart {
+    width: 267px;
+  }
+
+  .site-list__item--new {
+    width: 220px;
+  }
+
+  .site-list__item {
+    &--new,
+    &--sale {
+      display: inline-block;
+    }
+  }
+
+  .site-list__item--new .site-list__link {
+    font-size: 15px;
+  }
+
+  .site-list__item--sale .site-list__link {
+    font-size: 15px;
+  }
 }

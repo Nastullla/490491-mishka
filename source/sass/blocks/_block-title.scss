@@ -24,3 +24,25 @@
     flex-shrink: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .block-title {
+    width: 167px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block-title {
+    display: block;
+
+    box-sizing: border-box;
+
+    width: 175px;
+
+    padding-left: 62px;
+  }
+}

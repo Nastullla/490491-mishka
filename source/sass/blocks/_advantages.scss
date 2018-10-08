@@ -1,7 +1,7 @@
 .advantages {
   @include indents-mobile;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-bottom: 10px;
 }
 
 .advantages__title {
@@ -67,4 +67,36 @@
   line-height: 20px;
   font-weight: 700;
   color: $dark-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    @include indents-tablet;
+    padding-top: 49px;
+    padding-bottom: 83px;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    @include indents-desktop-index;
+    padding-top: 59px;
+    padding-bottom: 50px;
+  }
+
+  .advantages__title {
+    margin-left: 171px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
