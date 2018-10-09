@@ -100,6 +100,7 @@
     position: relative;
 
     @include indents-tablet;
+
     padding-top: 34px;
     padding-bottom: 69px;
 
@@ -146,7 +147,7 @@
   .promo__image {
     position: absolute;
     top: 141px;
-    left: 384px;
+    right: 51px;
 
     width: 333px;
     height: 404px;
@@ -168,10 +169,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-left: 0;
-    padding-right: 0;
+    @include reset-indents;
     padding-top: 112px;
     padding-bottom: 96px;
 
@@ -222,7 +220,7 @@
 
   .promo__image {
     top: 60px;
-    left: 525px;
+    right: 0;
 
     width: 525px;
     height: 636px;

@@ -76,6 +76,7 @@
 @media (min-width: $tablet-width) {
   .type {
     @include indents-tablet;
+
     display: flex;
     align-items: flex-start;
     padding-top: 66px;
@@ -118,7 +119,8 @@
 
 @media (min-width: $desktop-width) {
   .type {
-    @include indents-desktop;
+    @include reset-indents;
+
     padding-top: 16px;
     padding-bottom: 9px;
   }

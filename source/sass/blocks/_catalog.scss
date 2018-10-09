@@ -69,6 +69,8 @@
     font-size: 53px;
     line-height: 57px;
 
+    background-position: 32px bottom;
+
     background-size: 1150px 34px;
   }
 
@@ -77,7 +79,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    @include indents-desktop;
+    @include reset-indents;
     padding-top: 111px;
   }
 

@@ -7,12 +7,16 @@ body {
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    width: 1150px;
+  .page__container {
+    box-sizing: border-box;
+
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .body-index {
-    width: 1250px;
+  .body-index .page__container {
+    width: 1050px;
   }
 }
 

@@ -62,13 +62,15 @@
 
 @media (min-width: $tablet-width) {
   .color {
+    background-color: $secondary-background-color;
+  }
+
+  .color__wrapper {
     @include indents-tablet;
     display: flex;
     align-items: flex-start;
     padding-top: 67px;
     padding-bottom: 9px;
-
-    background-color: $secondary-background-color;
   }
 
   .color__title {
@@ -109,5 +111,13 @@
   .color__checkbox:not(:checked):active + .color__label::before {
     background: url("../img/icon-tick.svg") no-repeat center center;
     background-size: 33px 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color__wrapper {
+    @include reset-indents;
+    padding-top: 67px;
+    padding-bottom: 9px;
   }
 }

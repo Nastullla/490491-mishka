@@ -23,11 +23,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    @include indents-desktop;
-  }
-
-  .body-index .main-nav {
-    @include indents-desktop-index;
+    @include reset-indents;
   }
 
   .main-nav__delivery {

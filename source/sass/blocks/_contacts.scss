@@ -45,6 +45,19 @@
   line-height: 30px;
   font-weight: 400;
   color: $grey-font-color;
+
+  &--mail {
+    border-bottom: 1px solid #62d1ba;
+
+    &:hover {
+      color: #46c1ae;
+      border-bottom-width: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__map {
@@ -133,8 +146,6 @@
   .contacts {
     position: relative;
 
-    margin-left: 100px;
-    margin-right: 100px;
     padding-left: 174px;
     padding-right: 0;
     padding-top: 164px;

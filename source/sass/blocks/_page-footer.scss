@@ -1,9 +1,11 @@
 .page-footer {
+  background-color: $secondary-background-color;
+}
+
+.page-footer__wrapper {
   @include indents-mobile;
   padding-top: 25px;
   padding-bottom: 27px;
-
-  background-color: $secondary-background-color;
 }
 
 .page-footer__logo {
@@ -31,7 +33,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -63,14 +65,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
-    @include indents-desktop;
+  .page-footer__wrapper {
+    @include reset-indents;
+
     padding-top: 51px;
     padding-bottom: 28px;
-  }
-
-  .body-index .page-footer {
-    @include indents-desktop-index;
   }
 
   .page-footer__logo {

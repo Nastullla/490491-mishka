@@ -170,6 +170,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .personal-data {
+    @include reset-indents;
+
+    padding-top: 67px;
+    padding-bottom: 19px;
+  }
+
   .personal-data__wrap {
     width: 700px;
   }
@@ -179,7 +186,12 @@
   }
 
   .personal-data--single-field {
-    padding-right: 225px;
+    padding-top: 47px;
+    padding-bottom: 50px;
+  }
+
+  .personal-data--single-field__wrapper {
+    padding-right: 175px;
   }
 
   .personal-data__wrapper {

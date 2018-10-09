@@ -1,3 +1,11 @@
+.product:hover .product__wrap {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product:active .product__wrap {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product__link-image {
   display: block;
   line-height: 0;
@@ -21,6 +29,14 @@
   line-height: 24px;
   font-weight: 700;
   color: $dark-font-color;
+
+  &:hover {
+    color: rgba($dark-font-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($dark-font-color, 0.3);
+  }
 }
 
 .product__description {
