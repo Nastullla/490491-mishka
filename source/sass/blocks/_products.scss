@@ -1,5 +1,6 @@
 .products {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 
   min-height: 417px;
   padding-top: 71px;
@@ -12,7 +13,6 @@
   @include reset-indents;
   @include indents-mobile;
 
-
   text-align: center;
   font-size: 27px;
   line-height: 30px;
@@ -21,7 +21,7 @@
 }
 
 .products__link {
-  position: absolute;
+  position: relative;
 
   box-sizing: border-box;
 
@@ -67,8 +67,9 @@
   }
 
   &:first-of-type {
-    bottom: 103px;
-    left: 0;
+    // bottom: 103px;
+    // left: 0;
+    margin-top: auto;
 
     background-color: #63d1bb;
 
@@ -78,12 +79,11 @@
   }
 
   &:last-of-type {
-    bottom: 0;
-    left: 0;
-
     background-color: #56c3b2;
 
     &:hover {
+      margin-top: -5px;
+
       background-color: #46c1ae;
     }
   }
@@ -105,14 +105,34 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    z-index: -1;
+    position: relative;
+    // z-index: -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
     min-height: 686px;
 
     background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat center 0;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+
+      width: 100%;
+      height: 24px;
+
+      background: url("../img/bg-zigzag-fill.svg") repeat-x left bottom;
+      background-size: 768px 24px;
+    }
   }
 
   .products-title {
+    flex-basis: 100%;
+
     @include reset-indents;
     padding-top: 82px;
 
@@ -121,41 +141,20 @@
     color: $dark-font-color;
   }
 
-  .products__wrap::after {
-    content: "";
-
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-
-    width: 100%;
-    height: 24px;
-
-    background: url("../img/bg-zigzag-fill.svg") repeat-x left bottom;
-    background-size: 768px 24px;
-  }
-
   .products__link {
-    bottom: 0;
-    right: 50%;
-
     width: 334px;
     height: 130px;
+    margin-top: auto;
     padding-top: 28px;
     padding-left: 35px;
 
     font-size: 20px;
     line-height: 30px;
 
-    &:first-of-type {
-      bottom: 0;
-      right: 50%;
-      left: auto;
-    }
-
     &:last-of-type {
-      bottom: 0;
-      left: 50%;
+      &:hover {
+        margin-top: auto;
+      }
     }
 
     &--interior::after {
@@ -176,20 +175,18 @@
 @media (min-width: $desktop-width) {
   .products {
     background-img: url("../img/hero-desktop@1x.jpg");
+
+    &::after {
+      height: 37px;
+
+      background: url("../img/bg-zigzag-fill.svg") repeat-x left 7px;
+      background-size: 1250px 37px;
+    }
   }
 
   .products-title {
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .products__wrap::after {
-    bottom: -8px;
-
-    height: 37px;
-
-    background: url("../img/bg-zigzag-fill.svg") repeat-x 15px bottom;
-    background-size: 1250px 37px;
   }
 
   .products__link {
