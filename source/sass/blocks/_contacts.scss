@@ -47,6 +47,8 @@
   color: $grey-font-color;
 
   &--mail {
+    height: 29px;
+
     border-bottom: 1px solid #62d1ba;
 
     &:hover {
@@ -144,21 +146,43 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 
-    padding-left: 174px;
+    padding-left: 0;
     padding-right: 0;
-    padding-top: 164px;
-    padding-bottom: 55px;
+    padding-top: 94px;
+    padding-bottom: 50px;
 
     background-position: -26px top;
     background-size: 1050px 23px;
+  }
+
+  .contacts__col {
+    flex-basis: 50%;
+    max-width: 50%;
+
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-top: 70px;
+      padding-left: 174px;
+    }
+
+    &:last-child {
+      flex-basis: 230px;
+      height: 52px;
+    }
   }
 
   .contacts__wrapper {
     display: block;
 
     margin-bottom: 79px;
+  }
+
+  .contacts__wrap {
+    width: 100%;
   }
 
   .contacts__title {
@@ -173,10 +197,7 @@
   }
 
   .contacts__map {
-    position: absolute;
-    top: 94px;
-    left: auto;
-    right: 1px;
+    position: static;
 
     width: 525px;
     height: 457px;
@@ -187,7 +208,9 @@
   }
 
   .contacts .contacts__button {
-    margin-left: 2px;
+
+    margin-top: -107px;
+    margin-left: 175px;
     margin-bottom: 50px;
   }
 }

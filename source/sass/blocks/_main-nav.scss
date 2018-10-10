@@ -4,7 +4,11 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    position: relative;
+
     @include indents-tablet;
+
+    z-index: 10;
   }
 
   .main-nav__delivery {
