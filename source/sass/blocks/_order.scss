@@ -28,3 +28,54 @@
 .order__form {
   @include indents-mobile;
 }
+
+@media (min-width: $tablet-width) {
+  .order__title {
+    @include indents-tablet;
+    padding-top: 94px;
+    padding-bottom: 93px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    background: $secondary-background-color url("../img/bg-zigzag-fill.svg") repeat-x left bottom;
+    background-size: 770px 23px;
+
+    // border-top: 1px solid #dfdfdf;
+  }
+
+  .order__text {
+    @include indents-tablet;
+    padding-top: 61px;
+    padding-bottom: 7px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__form {
+    @include reset-indents;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__title {
+    padding-top: 94px;
+    padding-bottom: 121px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    background-position: 32px bottom;
+
+    background-size: 1150px 34px;
+  }
+
+  .order__text {
+
+    padding-top: 104px;
+    padding-right: 150px;
+    padding-bottom: 57px;
+    padding-left: 175px;
+  }
+}

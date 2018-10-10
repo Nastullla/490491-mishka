@@ -11,6 +11,10 @@
   line-height: 18px;
   font-weight: 700;
   color: $dark-font-color;
+
+  &:active {
+    color: rgba($dark-font-color, 0.3);
+  }
 }
 
 .copyright__link {

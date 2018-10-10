@@ -31,3 +31,30 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+.button--add-size {
+  width: 260px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $light-font-color;
+
+  background-color: $bright-background-color;
+
+  border: none;
+
+  &:hover,
+  &:active {
+    color: $light-font-color;
+
+    background-color: $bright-background-color;
+
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--add-size {
+    width: 350px;
+  }
+}

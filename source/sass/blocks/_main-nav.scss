@@ -1,0 +1,36 @@
+.main-nav__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    position: relative;
+
+    @include indents-tablet;
+
+    z-index: 10;
+  }
+
+  .main-nav__delivery {
+    display: block;
+
+    width: 280px;
+
+    margin-left: auto;
+
+    text-align: right;
+    font-size: 15px;
+    line-height: 24px;
+    color: $grey-font-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    @include reset-indents;
+  }
+
+  .main-nav__delivery {
+    margin-top: -74px;
+  }
+}
