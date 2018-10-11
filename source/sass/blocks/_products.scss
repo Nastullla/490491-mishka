@@ -67,8 +67,6 @@
   }
 
   &:first-of-type {
-    // bottom: 103px;
-    // left: 0;
     margin-top: auto;
 
     background-color: #63d1bb;
@@ -90,10 +88,18 @@
 
   &:hover {
     height: 108px;
+
+    &::after {
+      opacity: 0.7;
+    }
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
