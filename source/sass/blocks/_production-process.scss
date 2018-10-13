@@ -5,7 +5,6 @@
   padding-bottom: 32px;
 
   border: 1px solid #ececec;
-  // border: 1px solid red;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -59,6 +58,11 @@
   margin-right: -1px;
 
   background: url("../img/video-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 .production-process__button-play {
@@ -137,6 +141,11 @@
     order: -1;
 
     background: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
   }
 
   .production-process__description {
@@ -189,6 +198,11 @@
     height: 455px;
 
     background: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
+    }
   }
 
   .production-process__description {
