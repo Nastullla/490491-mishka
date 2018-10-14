@@ -101,6 +101,11 @@
     padding-bottom: 86px;
 
     background: url("../img/review@1x.jpg") no-repeat left top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -131,7 +136,7 @@
     display: block;
   }
 
-  .reviews .reviews__button-write {
+  .reviews__button-write {
     position: absolute;
     top: 79px;
     right: 50px;
@@ -186,7 +191,7 @@
     right: 0;
   }
 
-  .reviews .reviews__button-write {
+  .reviews__button-write {
     top: 79px;
     right: 0;
   }

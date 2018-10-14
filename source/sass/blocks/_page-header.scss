@@ -73,6 +73,18 @@
     border: none;
   }
 
+  .page-header__logo {
+    width: 113px;
+    height: 46px;
+
+    margin-left: 48px;
+  }
+
+  .page-header__logo-image {
+    width: 113px;
+    height: auto;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -82,7 +94,20 @@
   .page-header__wrapper {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 8px;
 
     text-align: center;
+  }
+
+  .page-header__logo {
+    width: 149px;
+    height: 72px;
+
+    margin-left: 8px;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: auto;
   }
 }

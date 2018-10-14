@@ -75,6 +75,8 @@
 }
 
 .promo__image {
+  width: 260px;
+  height: 315px;
   margin-bottom: 21px;
 }
 
@@ -164,7 +166,7 @@
 
   .promo__image {
     width: 333px;
-    height: 404px;
+    height: auto;
     margin-top: 9px;
     margin-bottom: 0;
   }
@@ -176,7 +178,7 @@
     font-size: 20px;
   }
 
-  .promo .promo__button {
+  .promo__button {
     width: 292px;
     margin: 0;
   }
@@ -252,7 +254,7 @@
     margin-left: 175px;
   }
 
-  .promo .promo__button {
+  .promo__button {
     margin-left: 175px;
   }
 }

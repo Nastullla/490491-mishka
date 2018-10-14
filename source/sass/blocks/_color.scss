@@ -60,6 +60,10 @@
   background: none;
 }
 
+.color__checkbox:focus + .color__label::before {
+  border-color: $bright-font-color;
+}
+
 @media (min-width: $tablet-width) {
   .color {
     background-color: $secondary-background-color;

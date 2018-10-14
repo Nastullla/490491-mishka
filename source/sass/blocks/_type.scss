@@ -73,6 +73,10 @@
   background-color: $light-font-color;
 }
 
+.type__radio:focus + .type__label::before {
+  border-color: $bright-font-color;
+}
+
 @media (min-width: $tablet-width) {
   .type {
     @include indents-tablet;
