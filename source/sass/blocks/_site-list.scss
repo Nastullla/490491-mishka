@@ -28,7 +28,9 @@
   color: $dark-font-color;
 
   border-bottom: 1px solid #ececec;
+}
 
+.site-list__link[href] {
   &:hover {
     color: rgba($dark-font-color, 0.6);
   }
@@ -58,7 +60,6 @@
     background: url("../img/icon-cart.svg") no-repeat;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .site-list {
