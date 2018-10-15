@@ -95,6 +95,10 @@
     width: 158px;
     margin-left: 81px;
     margin-bottom: 57px;
+
+    &:last-child {
+      margin-bottom: 43px;
+    }
   }
 
   .color__label {
@@ -123,5 +127,15 @@
     @include reset-indents;
     padding-top: 67px;
     padding-bottom: 9px;
+  }
+
+  .color__list {
+    justify-content: flex-start;
+
+    width: auto;
+  }
+
+  .color__item {
+    width: 182px;
   }
 }
