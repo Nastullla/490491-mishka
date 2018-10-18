@@ -53,10 +53,8 @@
     color: #62d1ba;
   }
 
-
-
   &--mail:hover + .personal-data__svg--mail,
-  &--mail:focus + .personal-data__svg--mail   {
+  &--mail:focus + .personal-data__svg--mail {
     color: #62d1ba;
   }
 }
@@ -80,7 +78,6 @@
 
   &--phone {
     right: 8px;
-
   }
 
   &--mail {
@@ -151,7 +148,6 @@
 
     &--phone {
       right: 26px;
-
     }
 
     &--mail {
@@ -199,7 +195,6 @@
   .personal-data__svg {
     &--phone {
       right: 8px;
-
     }
 
     &--mail {

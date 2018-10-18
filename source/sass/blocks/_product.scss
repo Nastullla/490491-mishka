@@ -77,15 +77,7 @@
   border: none;
 
   cursor: pointer;
-}
 
-.product__cart-svg {
-  margin-top: 1px;
-
-  color: #d3d2d2;
-}
-
-.product__cart {
   &:hover .product__cart-svg {
     color: $bright-background-color;
   }
@@ -93,6 +85,12 @@
   &:active .product__cart-svg {
     opacity: 0.3;
   }
+}
+
+.product__cart-svg {
+  margin-top: 1px;
+
+  color: #d3d2d2;
 }
 
 @media (min-width: $tablet-width) {
