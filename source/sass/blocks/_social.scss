@@ -24,15 +24,13 @@
   width: 23px;
   height: 28px;
 
-  &--instagram {
-    background: url("../img/icon-insta.svg") no-repeat right 50%;
+  color: #231F20;
+
+  &:hover .social__link-svg {
+    color: #46c1ae;
   }
 
-  &--facebook {
-    background: url("../img/icon-fb.svg") no-repeat 50% 50%;
-  }
-
-  &--twitter {
-    background: url("../img/icon-twitter.svg") no-repeat left 50%;
+  &:active .social__link-svg {
+    opacity: 0.3;
   }
 }

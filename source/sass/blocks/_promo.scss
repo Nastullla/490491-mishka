@@ -106,7 +106,7 @@
     @include indents-tablet;
 
     padding-top: 34px;
-    padding-bottom: 69px;
+    padding-bottom: 66px;
 
     background-position: -21px bottom;
     background-size: 770px 17px;
@@ -124,7 +124,7 @@
     }
 
     &:last-child {
-      margin-top: -111px;
+      margin-top: -114px;
     }
   }
 
@@ -188,7 +188,7 @@
   .promo {
     @include reset-indents;
     padding-top: 112px;
-    padding-bottom: 96px;
+    padding-bottom: 93px;
 
     background-position: -26px bottom;
     background-size: 1050px 23px;
@@ -196,7 +196,7 @@
 
   .promo__col {
     &:last-child {
-      margin-top: -110px;
+      margin-top: -113px;
     }
   }
 

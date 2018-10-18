@@ -4,6 +4,14 @@
   align-items: center;
 
   width: 184px;
+
+  &:hover .copyright__link-svg {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -17,9 +25,10 @@
   }
 }
 
-.copyright__link {
+.copyright__link-svg {
   width: 27px;
   height: 34px;
+  margin-top: 2px;
 
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  color: $bright-background-color;
 }
