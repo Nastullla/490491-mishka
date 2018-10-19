@@ -5,11 +5,23 @@
 .page-footer__wrapper {
   @include indents-mobile;
   padding-top: 25px;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
 }
 
 .page-footer__logo {
   display: none;
+
+  &:hover .page-footer__logo-image {
+    color: #46c1ae;
+  }
+
+  &:active .page-footer__logo-image {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-image {
+  color: #231f20;
 }
 
 .page-footer__social {
@@ -40,7 +52,7 @@
 
     @include indents-tablet;
     padding-top: 51px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
   }
 
   .page-footer__logo {

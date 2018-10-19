@@ -74,13 +74,23 @@
   width: 20px;
   height: 19px;
 
-  background: url("../img/icon-cart.svg") no-repeat;
-
   border: none;
 
-  opacity: 0.2;
-
   cursor: pointer;
+
+  &:hover .product__cart-svg {
+    color: $bright-background-color;
+  }
+
+  &:active .product__cart-svg {
+    opacity: 0.3;
+  }
+}
+
+.product__cart-svg {
+  margin-top: 1px;
+
+  color: #d3d2d2;
 }
 
 @media (min-width: $tablet-width) {
