@@ -16,6 +16,7 @@
 
 .contacts__wrap {
   display: flex;
+  align-items: flex-start;
   margin-bottom: 30px;
 
   &:last-child {
@@ -44,16 +45,19 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+
   color: $grey-font-color;
 
   &--mail {
-    height: 29px;
+    max-width: 182px;
+    min-height: 29px;
+    word-break: break-all;
 
     border-bottom: 1px solid #62d1ba;
 
     &:hover {
       color: #46c1ae;
-      border-bottom-width: #46c1ae;
+      border-bottom-color: #46c1ae;
     }
 
     &:active {
@@ -78,6 +82,11 @@
     background: url("../img/map-mobile@2x.jpg");
     background-size: 322px auto;
   }
+}
+
+.contacts__iframe {
+  width: 100%;
+  height: 457px;
 }
 
 .contacts__button {
@@ -136,6 +145,10 @@
   .contacts__text {
     font-size: 17px;
     line-height: 30px;
+
+    &--mail {
+      max-width: 250px;
+    }
   }
 
   .contacts__map {
@@ -149,6 +162,10 @@
     }
   }
 
+  .contacts__iframe {
+    height: 457px;
+  }
+
   .contacts__button {
     width: 230px;
   }
@@ -158,6 +175,7 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     padding-left: 0;
     padding-right: 0;
@@ -181,7 +199,6 @@
 
     &:last-child {
       flex-basis: 230px;
-      height: 52px;
     }
   }
 
@@ -222,8 +239,12 @@
     }
   }
 
-  .contacts .contacts__button {
+  .contacts__iframe {
+    width: 525px;
+    height: 457px;
+  }
 
+  .contacts .contacts__button {
     margin-top: -107px;
     margin-left: 175px;
     margin-bottom: 50px;
