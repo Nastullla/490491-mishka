@@ -45,7 +45,11 @@
   }
 
   &::placeholder {
-    opacity: 0.3;
+    color: rgba($grey-font-color, 0.3);
+  }
+
+  &:-ms-input-placeholder {
+    color: #c7c7c7;
   }
 
   &--phone:hover + .personal-data__svg--phone,
@@ -75,6 +79,8 @@
   top: 34px;
 
   color: #cccccc;
+
+  pointer-events: none;
 
   &--phone {
     right: 8px;
@@ -127,6 +133,7 @@
     padding-bottom: 12px;
 
     font-size: 19px;
+    line-height: 26px;
   }
 
   .personal-data--single-field {

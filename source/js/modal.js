@@ -1,17 +1,1 @@
-var popup = document.querySelector(".modal");
-var orderBtn = document.querySelector(".promo__button");
-var cartBtn = document.querySelector(".product__cart");
-
-if (orderBtn) {
-  orderBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal--close");
-  });
-}
-
-if (cartBtn) {
-  cartBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal--close");
-  });
-}
+var popup=document.querySelector(".modal"),orderBtn=document.querySelector(".promo__button"),cartBtn=document.querySelector(".product__cart");orderBtn&&orderBtn.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal--close")}),cartBtn&&cartBtn.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal--close")});

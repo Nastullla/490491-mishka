@@ -50,6 +50,8 @@
   left: 32px;
 
   color: #d3d2d2;
+
+  pointer-events: none;
 }
 
 .site-list__link--search {
@@ -72,6 +74,8 @@
   left: 30px;
 
   color: #d3d2d2;
+
+  pointer-events: none;
 }
 
 .site-list__link--cart {

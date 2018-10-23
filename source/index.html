@@ -4,7 +4,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: Mishka</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body class="page body-index">
 
@@ -100,7 +106,7 @@
         <picture>
           <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
 
           <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
@@ -249,7 +255,7 @@
       <button class="form-choose-size__button button button--add-size" type="submit">Добавить</button>
     </form>
   </section>
-  <script src="js/menu.js" type="application/javascript"></script>
-  <script src="js/modal.js" type="application/javascript"></script>
+  <script src="js/menu.min.js" type="application/javascript"></script>
+  <script src="js/modal.min.js" type="application/javascript"></script>
 </body>
 </html>
