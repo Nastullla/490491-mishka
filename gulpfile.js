@@ -99,6 +99,13 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("copyNodeModules", function () {
+  return gulp.src([
+    "node_modules/picturefill/dist/picturefill.min.js"
+  ])
+  .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -114,5 +121,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "compressJs"));
+gulp.task("build", gulp.series("clean", "copyNodeModules","copy", "css", "sprite", "html", "compressJs"));
 gulp.task("start", gulp.series("build", "server"));
