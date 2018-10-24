@@ -63,7 +63,7 @@
   }
 }
 
-.personal-data__wrapper {
+.personal-data__field-wrapper {
   position: relative;
 }
 
@@ -145,7 +145,7 @@
     background-color: $secondary-background-color;
   }
 
-  .personal-data__wrapper {
+  .personal-data__field-wrapper {
     display: flex;
     align-items: baseline;
   }
@@ -162,7 +162,7 @@
     }
   }
 
-  .personal-data__wrapper:first-child {
+  .personal-data__field-wrapper:first-child {
     margin-bottom: 21px;
   }
 
@@ -195,7 +195,7 @@
     padding-bottom: 50px;
   }
 
-  .personal-data--single-field__wrapper {
+  .personal-data__wrapper {
     padding-right: 175px;
   }
 
