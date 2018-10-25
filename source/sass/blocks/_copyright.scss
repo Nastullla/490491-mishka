@@ -20,9 +20,7 @@
   font-weight: 700;
   color: $dark-font-color;
 
-  &:active {
-    color: rgba($dark-font-color, 0.3);
-  }
+  pointer-events: none;
 }
 
 .copyright__link-svg {
@@ -31,4 +29,6 @@
   margin-top: 2px;
 
   color: $bright-background-color;
+
+  pointer-events: none;
 }

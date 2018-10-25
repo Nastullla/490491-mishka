@@ -45,7 +45,11 @@
   }
 
   &::placeholder {
-    opacity: 0.3;
+    color: rgba($grey-font-color, 0.3);
+  }
+
+  &:-ms-input-placeholder {
+    color: #c7c7c7;
   }
 
   &--phone:hover + .personal-data__svg--phone,
@@ -59,7 +63,7 @@
   }
 }
 
-.personal-data__wrapper {
+.personal-data__field-wrapper {
   position: relative;
 }
 
@@ -75,6 +79,8 @@
   top: 34px;
 
   color: #cccccc;
+
+  pointer-events: none;
 
   &--phone {
     right: 8px;
@@ -127,6 +133,7 @@
     padding-bottom: 12px;
 
     font-size: 19px;
+    line-height: 26px;
   }
 
   .personal-data--single-field {
@@ -138,7 +145,7 @@
     background-color: $secondary-background-color;
   }
 
-  .personal-data__wrapper {
+  .personal-data__field-wrapper {
     display: flex;
     align-items: baseline;
   }
@@ -155,7 +162,7 @@
     }
   }
 
-  .personal-data__wrapper:first-child {
+  .personal-data__field-wrapper:first-child {
     margin-bottom: 21px;
   }
 
@@ -188,7 +195,7 @@
     padding-bottom: 50px;
   }
 
-  .personal-data--single-field__wrapper {
+  .personal-data__wrapper {
     padding-right: 175px;
   }
 
